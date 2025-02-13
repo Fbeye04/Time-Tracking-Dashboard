@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <!-- Header section -->
+      <section class="profile-card">
+        <div class="profile-info">
+          <img src="./images/image-jeremy.png" alt="profile" />
+          <div>
+            <p>Report for</p>
+            <h1>Jeremy Robson</h1>
+          </div>
+        </div>
+        <div class="timeframes">
+          <button data-timeframe="daily" aria-pressed="true">Daily</button>
+          <button data-timeframe="weekly" aria-pressed="false">Week</button>
+          <button data-timeframe="monthly" aria-pressed="false">Monthly</button>
+        </div>
+      </section>
+
+      <!-- Card Container -->
+      <section class="cards-container"></section>
+    </main>
+
+    <footer>
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.linkedin.com/in/muhammad-fachrezi-barus/">Fachrezi</a
+      >.
+    </footer>
+
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
