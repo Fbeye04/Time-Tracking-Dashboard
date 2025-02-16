@@ -28,6 +28,7 @@ const displayActivities = () => {
 
     const activityCard = document.createElement("section");
     activityCard.classList.add("activity-card");
+    activityCard.setAttribute("id", iconName);
 
     activityCard.innerHTML = `
         <div class="activity-icon">
