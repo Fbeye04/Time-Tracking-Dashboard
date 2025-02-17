@@ -1,9 +1,12 @@
+// retrieves all necessary global variables
 const activitiesContainer = document.getElementById(
   "card-activities-container"
 );
 const timeframeButtons = document.querySelectorAll(".timeframes button");
 
+// takes the current timeframe
 let currentTimeframe = "daily";
+// array to store activity data
 let activitiesData = [];
 
 const fetchData = async () => {
@@ -12,14 +15,15 @@ const fetchData = async () => {
     activitiesData = await response.json();
     displayActivities();
   } catch (error) {
-    console.log("Error fetching data:", error);
     activitiesContainer.innerHTML = "<p>Gagal memuat data</p>";
   }
 };
 
 const displayActivities = () => {
+  // empty content
   activitiesContainer.innerHTML = "";
 
+  // create cards for each activity using the iteration method
   activitiesData.forEach((activity) => {
     const { title, timeframes } = activity;
     const timeframe = timeframes[currentTimeframe];
@@ -59,11 +63,14 @@ const capitalizeTimeframe = (str) => {
 };
 
 const updateTimeframe = (event) => {
+  // retrieves the timeframe value of the clicked button
   currentTimeframe = event.target.getAttribute("data-timeframe");
 
+  // changes all button values to false
   timeframeButtons.forEach((button) => {
     button.setAttribute("aria-pressed", "false");
   });
+  // changes the value of the clicked button to true
   event.target.setAttribute("aria-pressed", "true");
 
   displayActivities();
