@@ -41,7 +41,7 @@ const displayActivities = () => {
         <div class="activity-details">
             <div class="activity-header">
                 <h2>${title}</h2>
-                <img src="../images/icon-ellipsis.svg" alt="options">
+                <img src="./images/icon-ellipsis.svg" alt="options">
             </div>
             <div class="activity-info">
                 <p class="current">${timeframe.current}hrs</p>
