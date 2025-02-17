@@ -135,11 +135,6 @@ main {
   animation-fill-mode: both;
 }
 
-/* .activity-card.show {
-  opacity: 1;
-  transform: translateY(0);
-} */
-
 .activity-icon {
   z-index: 0;
   position: absolute;
@@ -217,7 +212,6 @@ footer {
 
 footer a {
   color: greenyellow;
-  text-decoration: none;
 }
 
 /* tablet */
