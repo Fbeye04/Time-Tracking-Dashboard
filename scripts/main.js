@@ -11,7 +11,7 @@ let activitiesData = [];
 
 const fetchData = async () => {
   try {
-    const response = await fetch("../data.json");
+    const response = await fetch("./data.json");
     activitiesData = await response.json();
     displayActivities();
   } catch (error) {
