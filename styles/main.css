@@ -175,6 +175,11 @@ main {
   margin-top: 50px;
 }
 
+.activity-details:hover {
+  background-color: var(--Desaturated-blue);
+  cursor: pointer;
+}
+
 .activity-header {
   display: flex;
   justify-content: space-between;
