@@ -37,12 +37,12 @@ const displayActivities = () => {
 
       activityCard.innerHTML = `
           <div class="activity-icon">
-              <img src="../images/icon-${iconName}.svg" alt="icon ${title}">
+              <img src="./images/icon-${iconName}.svg" alt="icon ${title}">
           </div>
           <div class="activity-details">
               <div class="activity-header">
                   <h2>${title}</h2>
-                  <img src="../images/icon-ellipsis.svg" alt="options">
+                  <img src="./images/icon-ellipsis.svg" alt="options">
               </div>
               <div class="activity-info">
                   <p class="current">${timeframe.current}hrs</p>
